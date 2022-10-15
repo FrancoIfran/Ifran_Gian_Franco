@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let dias22 = prompt("Ingresar el mes deseado")
+        var meses = ["Enero", "Febero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        mes = parseInt(dias22);
+        var diaMes = diasEnUnMes(mes,2022);
+        function diasEnUnMes(mes, año) {
+            return new Date(año, meses.indexOf(mes) + 1, 0).getDate();
+        }
+        alert("El mes de "+meses[mes -1]+" tiene : "+diaMes+" días")
+    </script>
+</body>
+</html>

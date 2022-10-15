@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promedios del Alumno:</h1>
+    <p> Nota 1: <input type"text" id="num1"</p>
+    <p> Nota 2: <input type"text" id="num2"</p> 
+    <p> Nota 3: <input type"text" id="num3"</p>
+    <p><input type="button" value="Calcular" onclick="calcularPromedio()"></p>
+    <p id="promedio"></p>
+</body>
+   <script>
+   function calcularPromedio() {
+        var v1 = document.getElementById("num1").value;
+        var v2 = document.getElementById("num2").value;
+        var v3 = document.getElementById("num3").value;
+        var resprom = parseInt(v1) + parseInt(v2) + parseInt(v3);
+        var res = parseInt(resprom / 3)
+        document.getElementById("promedio").innerHTML = res;
+        if (res <= 10 && res > 0) {
+            if (res >= 8) {
+                alert("Sobresaliente!")
+            } else if (res < 8 && res >= 6) {
+                alert("Aprobado!")
+            } else if (res < 6) {
+                alert("Reprobado!")
+            }
+        }
+    }
+   </script>
+</html>

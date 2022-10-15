@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Crear una función que muestre información sobre una cadena de texto que se le pasa como
+          argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está
+          formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas. */
+
+        var resul = prompt("Ingresar texto");
+        if (resul === resul.toUpperCase()) {
+             alert("El texto "+resul+" esta formado por Mayusculas");
+
+        }
+        else if(resul === resul.toLowerCase()){
+             alert("El texto "+resul+" esta formado por Minusculas");
+
+        }
+        else {
+             alert("El texto "+resul+" esta formado por Mayusculas y Minusculas");
+        }
+    </script>
+</body>
+</html>

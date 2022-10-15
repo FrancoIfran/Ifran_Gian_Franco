@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var valores = ["verdadero", "false", 2, "hola",
+         "mundo", 3, "char"];
+         var nuevoValor = []
+         valores.forEach((texto) => {
+            if (typeof texto == "string") {
+                nuevoValor.push(texto);
+
+            }
+         })
+         document.write("El texto con mayor letra es : "+nuevoValor[0]);
+           for(let i = 0; i < nuevoValor.length; i++){
+            for (let h = i + 1;h < nuevoValor.length; h++){
+                if(nuevoValor[i].length > nuevoValor[h].length);
+                let aux = nuevoValor[i];
+                nuevoValor[i] = nuevoValor[h];
+                nuevoValor [h] = aux;
+
+            }
+           }
+           alert ("Las palabras de menor a mayor son : "+nuevoValor);
+           
+           let valor1 = valores[2];
+           let valor2 = valores[5];
+           let sum = valor1 + valor2;
+           console.log ("La suma es :"+sum);
+           let res = valor1 - valor2;
+           console.log ("La resta es :"+res);
+           let mult = valor1 * valor2;
+           console.log ("La mult es :"+mult);
+           let div = valor1 / valor2;
+           console.log("La division es :"+div);
+
+
+    </script>
+</body>
+</html>

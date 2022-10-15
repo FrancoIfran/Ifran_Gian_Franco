@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Escribir un script que muestre la posición de la primera vocal de un texto introducido por   
+        teclado.Por ejemplo: perro = “e” es la letra Nº2 ; árbol = “a” es la letra Nº1. */
+
+        var text = prompt("Ingresar palabra")
+        var palabraVoc = text.split('');
+        let vocalEnc = encontrarVocal(palabraVoc)
+        var posVocal = 0;
+        function encontrarVocal(string) {
+            let vocales = 'aeiouAEIOU';
+            for (let i = 0; i < string.length; i++) {
+                if (vocales.indexOf(string[i]) !== -1) {
+                    posvocal = i;
+                    return string[i];
+                }
+            }
+        }
+        alert(`La primera vocal de ${text} es: ${vocalEnc} y se encuentra en la posicion ${posvocal+1}`)
+    </script>
+</body>
+</html>
