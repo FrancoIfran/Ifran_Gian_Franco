@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio10</title>
+</head>
+
+<body>
+    <script>
+        mes = window.prompt("Ingresa el mes que deseas ver", "0");
+        buscarms = parseInt(mes);
+        let meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo",
+            "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+            "Noviembre", "Diciembre"];
+        if (buscarms > 0 && buscarms <= 12) {
+            alert("el mes que ingresaste es: " + meses[buscarms-1]);
+
+        } else {
+            alert("ingresa un numero del 1 al 12");
+        }
+    </script>
+</body>
+</html>
